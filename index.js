@@ -1,4 +1,4 @@
-const getlocation = () =>{
+const gtloc = () =>{
     // Get location from the user
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition((position) => {
