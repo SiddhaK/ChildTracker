@@ -8,7 +8,7 @@
     <link rel="icon" href="images/streak.gif" />
     <title>Care Tracker</title>
 </head>
-
+<body onload="getlocation">
 <section class="main">
     <div class="navbar">
         <div id="logo">
@@ -149,6 +149,16 @@
         <button class="button">Sign Up</button>
     </div>
 </section>
+    <script>
+        const getlocation = () =>{
+//         Get location from the user
+            if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition((position) => {
+                console.log(position);
+            });
+            }
+        }
+    </script>
 
 </body>
 
